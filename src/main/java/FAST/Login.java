@@ -35,7 +35,6 @@ public class Login {
             page.waitForLoadState();
             page.locator("text=Your Catalog").click();
             page.waitForLoadState();
-
             page.locator("//span[@class='title' and text()='Inventory']").click();
             page.waitForLoadState();
             page.locator("//span[@class='title' and text()='Request For Quote']").click();
