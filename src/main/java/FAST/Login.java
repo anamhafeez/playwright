@@ -16,7 +16,6 @@ public class Login {
             page.navigate("");
             page.locator("input[name='UserLogin[username]']").fill("");
             page.locator("input[name='UserLogin[password]']").fill("");
-            // Click the login button
             page.locator("button:has-text('Login')").click();
 
             page.waitForLoadState();
