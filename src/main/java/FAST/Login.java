@@ -13,9 +13,9 @@ public class Login {
             Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
             Page page = browser.newPage();
             long startTime  = System.currentTimeMillis();
-            page.navigate("https://fastcrib.com/fastcrib2/user/login");
-            page.locator("input[name='UserLogin[username]']").fill("anam.hafeez@confiz.com");
-            page.locator("input[name='UserLogin[password]']").fill("7e34694de67564e2a0fa0c2778f3feb7");
+            page.navigate("");
+            page.locator("input[name='UserLogin[username]']").fill("");
+            page.locator("input[name='UserLogin[password]']").fill("");
             // Click the login button
             page.locator("button:has-text('Login')").click();
 
