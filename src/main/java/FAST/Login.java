@@ -23,6 +23,7 @@ public class Login {
             long endTime = System.currentTimeMillis();
 
             long duration = endTime - startTime;
+
             System.out.println("Login performance: " + duration + " ms");
            // boolean isLoggedIn = page.locator("text=Home").isVisible();
             //if (isLoggedIn) {
