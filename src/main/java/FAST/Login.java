@@ -23,7 +23,6 @@ public class Login {
             page.waitForLoadState();
             long endTime = System.currentTimeMillis();
 
-
             long duration = endTime - startTime;
             System.out.println("Login performance: " + duration + " ms");
            // boolean isLoggedIn = page.locator("text=Home").isVisible();
@@ -31,7 +30,7 @@ public class Login {
            //     System.out.println("Login Test Passed: User logged in successfully.");
             //} else {
             //    System.out.println("Login Test Failed: User login unsuccessful.");
-          //  }
+
             page.locator("text=Home").click();
             page.locator("text=Your Catalog").click();
             page.waitForLoadState();
