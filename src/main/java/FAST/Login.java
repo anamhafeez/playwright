@@ -31,8 +31,14 @@ public class Login {
             //} else {
             //    System.out.println("Login Test Failed: User login unsuccessful.");
 
-            page.locator("text=Home").click();
+            //page.locator("text=Home").click();
+            page.waitForLoadState();
             page.locator("text=Your Catalog").click();
+            page.waitForLoadState();
+
+            page.locator("//span[@class='title' and text()='Inventory']").click();
+            page.waitForLoadState();
+            page.locator("//span[@class='title' and text()='Request For Quote']").click();
             page.waitForLoadState();
         }
     }
