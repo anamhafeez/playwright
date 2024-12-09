@@ -19,7 +19,6 @@ public class Login {
             // Click the login button
             page.locator("button:has-text('Login')").click();
 
-
             page.waitForLoadState();
             long endTime = System.currentTimeMillis();
 
