@@ -29,7 +29,6 @@ public class Login {
            //     System.out.println("Login Test Passed: User logged in successfully.");
             //} else {
             //    System.out.println("Login Test Failed: User login unsuccessful.");
-
             //page.locator("text=Home").click();
             page.waitForLoadState();
             page.locator("text=Your Catalog").click();
